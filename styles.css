@@ -1,0 +1,100 @@
+
+
+nav {background-color: lightgreen}
+.work-history {background-color: pink}
+.gallery {background-color: lightblue}
+.summary {background-color: yellow}
+.contact-me {background-color:lightgray}
+.quote {background-color: orange}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {background-color: #D9C4DA; min-width: 360px}
+
+@font-face {
+    font-family: "font1";
+    src: url(BaskervilleMTPro-Regular.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+body, section {font-family: "font1", serif;}
+
+.work-history {font-family: "Helvetica Neue", sans-serif ;}
+
+body, section {width: 100%; font-family: 'Libre Baskerville', serif;}
+
+section, nav {margin: 15px 0px 15px 0px; padding: 10px; box-sizing: border-box}
+
+nav { text-align: center; min-width: 220px;}
+.profilePic { margin: auto; width: 70%; min-width: 150px; margin-bottom: 40px;}
+nav h1 {font-size: 160%;}
+.navItems {font-size: 110%;}
+nav > *, .navItems > * {margin-bottom: 10px;}
+.icon-set {display: block; position: relative; ;}
+
+.icon:nth-child(2) {margin: auto 10px}
+.icon-set {margin: auto}
+
+.gallery > div {height: 100px; background-color: red; margin-bottom: 10px; display:inline-block; width: 100%}
+
+.summary, .work-history { padding: 50px 25px 50px 25px; line-height: 1.5;}
+
+.social-icon {height: 25px;}
+
+.contact-me {text-align: center; background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")}
+
+#name-emphasis {display:inline; font-size: 150%; }
+
+
+.work-history {background-image: url(work-history-background.webp); color: white;filter: con;}
+
+.ul-container ul {list-style-type: none;}
+
+.quote p:nth-of-type(1){font-size:200%; color: #FFFFFF;text-shadow: #000000 -1px 0px}
+.quote p:nth-of-type(2){margin: 15px; line-height: 1.5;}
+.quote p:nth-of-type(3){font-size: 125%; margin: 15px; color: #FFFFFF;text-shadow: #000000 -1px 0px; text-align: center}
+
+@media screen and (min-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+    }
+
+    section, nav {padding: 10px; box-sizing: border-box}
+
+    nav {margin: auto; text-align: center; width: 23%; float: left; height: 100%; text-align: right; padding-top: 20%; position: fixed;}
+    body > section {width: 70%; float: right;}
+
+    .summary {column-count: 2; column-gap: 40px; width: 65%;}
+    .work-history {width: 100%;}
+.quote p:nth-of-type(2) {width: 80%; margin: auto; margin-top: 20px; margin-bottom: 20px;}
+
+
+    .ul-container {width: 70%; float: right;}
+
+    .gallery {gap: 10px; display: grid; grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 1fr 1fr 1fr; height: auto;}
+
+    #gallery-img-1 {grid-column-start: 1; grid-column-end:2; grid-row-start: 1; grid-row-end: 3; background-color: aqua;}
+
+    #gallery-img-2 {grid-column-start: 2; grid-column-end:4; grid-row-start: 1; grid-row-end: 2; background-color: black;}
+
+    #gallery-img-3 {grid-column-start: 1; grid-column-end:3; grid-row-start: 3; grid-row-end: 4; background-color: blue;}
+
+    #gallery-img-4 {grid-column-start: 2; grid-column-end:3; grid-row-start: 2; grid-row-end: 3; background-color: yellow;}
+
+    #gallery-img-5 {grid-column-start: 3; grid-column-end: 4; grid-row-start: 2; grid-row-end: 4; background-color: pink;}
+
+
+}
