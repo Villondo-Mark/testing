@@ -1,12 +1,12 @@
 
-
+/*
 nav {background-color: lightgreen}
 .work-history {background-color: pink}
 .gallery {background-color: lightblue}
 .summary {background-color: yellow}
 .contact-me {background-color:lightgray}
 .quote {background-color: orange}
-
+*/
 
 html {
     scroll-behavior: smooth;
@@ -30,23 +30,21 @@ body, section {font-family: "font1", serif;}
 
 .work-history {font-family: "Helvetica Neue", sans-serif ;}
 
-body, section {width: 100%; font-family: 'Libre Baskerville', serif;}
-
 section, nav {margin: 15px 0px 15px 0px; padding: 10px; box-sizing: border-box}
 
-nav { text-align: center; min-width: 220px;}
-.profilePic { margin: auto; width: 70%; min-width: 150px; margin-bottom: 40px;}
-nav h1 {font-size: 160%;}
-.navItems {font-size: 110%;}
+nav { text-align: center; min-width: 220px}
+.profilePic { margin: auto; width: 70%; min-width: 150px; max-width: 205px; margin-bottom: 40px;}
+nav h1 {font-size: 160%; margin-bottom: 40px;}
+.navItems {font-size: 100%;}
 nav > *, .navItems > * {margin-bottom: 10px;}
-.icon-set {display: block; position: relative; ;}
+.icon-set {display: block; position: relative; margin-bottom: 20px;} 
+.icon-set > * {margin-left: 3px;}
 
-.icon:nth-child(2) {margin: auto 10px}
-.icon-set {margin: auto}
+.gallery {width: 100%;}
+.gallery-img {display: inline; width: 100%;}
 
-.gallery > div {height: 100px; background-color: red; margin-bottom: 10px; display:inline-block; width: 100%}
-
-.summary, .work-history { padding: 50px 25px 50px 25px; line-height: 1.5;}
+.summary, .quote {line-height: 1.5; padding:120px 50px}
+.summary { text-align: justify;}
 
 .social-icon {height: 25px;}
 
@@ -55,13 +53,22 @@ nav > *, .navItems > * {margin-bottom: 10px;}
 #name-emphasis {display:inline; font-size: 150%; }
 
 
-.work-history {background-image: url(work-history-background.webp); color: white;filter: con;}
+.work-history {background-image: url(work-history-background.webp); color: white;padding: 40px 20px;}
+.work-history-page {margin-bottom: 30px; padding: 30px; border-radius: 20px;background-color: rgba(1,2,3,.5)}
+.work-history h2 { margin-bottom: 40px; font-size: 160%; text-align: center;}
+.work-history h3 {text-align: center; font-size: 130%;}
+.date {text-align: center; margin-bottom: 30px;}
 
-.ul-container ul {list-style-type: none;}
+.ul-container ul {list-style: none;}
 
-.quote p:nth-of-type(1){font-size:200%; color: #FFFFFF;text-shadow: #000000 -1px 0px}
-.quote p:nth-of-type(2){margin: 15px; line-height: 1.5;}
-.quote p:nth-of-type(3){font-size: 125%; margin: 15px; color: #FFFFFF;text-shadow: #000000 -1px 0px; text-align: center}
+.quote p:nth-of-type(1){font-size:150%; color: #FFFFFF;text-shadow: #000000 -2px 0px 5px}
+.quote p:nth-of-type(2){margin: 20px; line-height: 2; display: inline;}
+.quote p:nth-of-type(3){font-size: 150%; color: #FFFFFF; 
+    text-shadow: #000000 -2px 0px 5px; text-align: right}
+
+    .form-placeholder {height: 300px}
+
+    .emphasis {display: inline; font-size: 130%; margin: 0; padding: 0%;}
 
 @media screen and (min-width: 480px) {
 
@@ -71,6 +78,8 @@ nav > *, .navItems > * {margin-bottom: 10px;}
         border: 0;
         font-size: 100%;
     }
+
+
 
     section, nav {padding: 10px; box-sizing: border-box}
 
@@ -84,17 +93,18 @@ nav > *, .navItems > * {margin-bottom: 10px;}
 
     .ul-container {width: 70%; float: right;}
 
-    .gallery {gap: 10px; display: grid; grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 1fr 1fr 1fr; height: auto;}
+    .gallery {gap: 5px; display: grid; grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 1fr 1fr 1fr; height: 300px;}
 
-    #gallery-img-1 {grid-column-start: 1; grid-column-end:2; grid-row-start: 1; grid-row-end: 3; background-color: aqua;}
+    #gallery-img-1 {grid-column-start: 1; grid-column-end:2; grid-row-start: 1; grid-row-end: 3}
 
-    #gallery-img-2 {grid-column-start: 2; grid-column-end:4; grid-row-start: 1; grid-row-end: 2; background-color: black;}
+    #gallery-img-2 {grid-column-start: 2; grid-column-end:4; grid-row-start: 1; grid-row-end: 2}
 
-    #gallery-img-3 {grid-column-start: 1; grid-column-end:3; grid-row-start: 3; grid-row-end: 4; background-color: blue;}
+    #gallery-img-3 {grid-column-start: 1; grid-column-end:3; grid-row-start: 3; grid-row-end: 4}
 
-    #gallery-img-4 {grid-column-start: 2; grid-column-end:3; grid-row-start: 2; grid-row-end: 3; background-color: yellow;}
+    #gallery-img-4 {grid-column-start: 2; grid-column-end:3; grid-row-start: 2; grid-row-end: 3}
 
-    #gallery-img-5 {grid-column-start: 3; grid-column-end: 4; grid-row-start: 2; grid-row-end: 4; background-color: pink;}
+    #gallery-img-5 {grid-column-start: 3; grid-column-end: 4; grid-row-start: 2; grid-row-end: 4}
 
+    .gallery-img  {object-fit: cover}
 
 }
