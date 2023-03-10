@@ -12,7 +12,7 @@ html {
     scroll-behavior: smooth;
   }
 
-body {background-color: #D9C4DA; min-width: 360px}
+body {background-color: #D9C4DA; min-width: 360px; ; width: 100%;overflow-x: hidden;}
 
 @font-face {
     font-family: "font1";
@@ -32,21 +32,24 @@ body, section {font-family: "font1", serif;}
 
 section, nav {margin: 15px 0px 15px 0px; padding: 10px; box-sizing: border-box}
 
-nav { text-align: center; min-width: 220px}
-.profilePic { margin: auto; width: 70%; min-width: 150px; max-width: 205px; margin-bottom: 40px;}
-nav h1 {font-size: 160%; margin-bottom: 40px;}
-.navItems {font-size: 100%;}
-nav > *, .navItems > * {margin-bottom: 10px;}
-.icon-set {display: block; position: relative; margin-bottom: 20px;} 
-.icon-set > * {margin-left: 3px;}
+nav {text-align: center; min-width: 220px;}
+.navItems {font-size: 100%; display: block;}
+.navItems > * {width: 60%; margin: auto; text-align: left; font-size: 130%; margin-bottom: 15px;}
+.profilePic { margin: auto; width: 80%; min-width: 150px; max-width: 270px; margin-bottom: 40px;}
+nav h1 {font-size: 240%; margin-bottom: 40px; text-decoration: underline;}
 
-.gallery {width: 100%;}
-.gallery-img {display: inline; width: 100%;}
+.icon-set {display: block; width: 100%; position: relative; margin-bottom: 40px;} 
+.personal-icon {height: 24px; display: inline; margin-right: 15px;}
 
-.summary, .quote {line-height: 1.5; padding:120px 50px}
-.summary { text-align: justify;}
+.resume-link {text-align: center; margin-top: 45px; background-color: #010203; width: 150px; height: 45px; color: #FFFFFF; border-radius: 25px; border: solid 3px #FFFFFF; box-sizing: border-box; padding: 7.5px;}
 
-.social-icon {height: 25px;}
+.resume-link a {font-family: "Helvetica Neue", sans-serif;}
+
+.summary, .quote {line-height: 1.5; padding:70px 50px}
+.summary {text-align: justify;}
+
+.social-icon {height: 35px;}
+.social-icon:nth-of-type(2) {margin-left: 10px; margin-right: 10px;}
 
 .contact-me {text-align: center; background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")}
 
@@ -61,14 +64,16 @@ nav > *, .navItems > * {margin-bottom: 10px;}
 
 .ul-container ul {list-style: none;}
 
-.quote p:nth-of-type(1){font-size:150%; color: #FFFFFF;text-shadow: #000000 -2px 0px 5px}
-.quote p:nth-of-type(2){margin: 20px; line-height: 2; display: inline;}
-.quote p:nth-of-type(3){font-size: 150%; color: #FFFFFF; 
-    text-shadow: #000000 -2px 0px 5px; text-align: right}
+#hook-start, #hook-end {font-size:200%; color: #FFFFFF;text-shadow: #000000 -2px 0px 5px; text-align: center}
+#hook-middle {margin: 20px; line-height: 2.25; display: inline; text-align: justify;}
 
     .form-placeholder {height: 300px}
 
-    .emphasis {display: inline; font-size: 130%; margin: 0; padding: 0%;}
+    .emphasis { font-size: 150%;}
+
+.gallery-mobile {width: 105%;margin-left: -2%; position: absolute; top:0; z-index: -2; margin-top: -3%; filter: brightness(.65);}
+.gallery-img-mobile { width: 100%; -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))}
+.gallery {display: none;}
 
 @media screen and (min-width: 480px) {
 
@@ -79,9 +84,9 @@ nav > *, .navItems > * {margin-bottom: 10px;}
         font-size: 100%;
     }
 
+body {width: 100%;overflow-x: hidden;}
 
-
-    section, nav {padding: 10px; box-sizing: border-box}
+    section, nav {padding: 10px; box-sizing: border-box;}
 
     nav {margin: auto; text-align: center; width: 23%; float: left; height: 100%; text-align: right; padding-top: 20%; position: fixed;}
     body > section {width: 70%; float: right;}
@@ -93,18 +98,12 @@ nav > *, .navItems > * {margin-bottom: 10px;}
 
     .ul-container {width: 70%; float: right;}
 
-    .gallery {gap: 5px; display: grid; grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 1fr 1fr 1fr; height: 300px;}
+    
+.gallery-mobile {display: none;}
 
-    #gallery-img-1 {grid-column-start: 1; grid-column-end:2; grid-row-start: 1; grid-row-end: 3}
-
-    #gallery-img-2 {grid-column-start: 2; grid-column-end:4; grid-row-start: 1; grid-row-end: 2}
-
-    #gallery-img-3 {grid-column-start: 1; grid-column-end:3; grid-row-start: 3; grid-row-end: 4}
-
-    #gallery-img-4 {grid-column-start: 2; grid-column-end:3; grid-row-start: 2; grid-row-end: 3}
-
-    #gallery-img-5 {grid-column-start: 3; grid-column-end: 4; grid-row-start: 2; grid-row-end: 4}
+    .gallery {height: auto; width: 104%; margin-right: -1.5%; margin-top: -1%;}
 
     .gallery-img  {object-fit: cover}
 
+    footer {position: absolute;}
 }
