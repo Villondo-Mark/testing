@@ -38,7 +38,7 @@ nav {text-align: center; min-width: 220px;}
 .profilePic { margin: auto; width: 80%; min-width: 150px; max-width: 270px; margin-bottom: 40px;}
 nav h1 {font-size: 200%; margin-bottom: 40px; text-decoration: underline;}
 
-.icon-set {display: block; ; position: relative; ; margin-top: 30px; background-color: #D9C4DA;} 
+.icon-set {display: block; ; position: relative; ; margin-top: 30px;} 
 .personal-icon {height: 24px; display: inline; margin-right: 15px;}
 
 .mobile-divider {border-bottom: 1px solid #010203; margin: 35px 0px;}
@@ -81,6 +81,8 @@ nav h1 {font-size: 200%; margin-bottom: 40px; text-decoration: underline;}
 .gallery-img-mobile { width: 100%; -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))}
 .gallery {display: none;}
 
+.personal-icon-mobile {display: none;}
+
 @media screen and (min-width: 480px) {
 
     * {
@@ -90,17 +92,21 @@ nav h1 {font-size: 200%; margin-bottom: 40px; text-decoration: underline;}
         font-size: 100%;
     }
 
-body {width: 100%; overflow-x: hidden;}
+body {width: 100%; overflow-x: hidden;padding: 0px 20px}
 
-    nav {width: 18%; float: left; height: 100%; padding-top: 10%; position: fixed;}
+    nav {width: 18%; float: left; height: 90%; padding: 10% 0px; position: fixed; border-radius: 25px; background-color: rgba(255, 255, 255, 0.5);}
 
-    .navItems > p {width: auto; margin: auto; text-align: left; font-size: 80%;text-align: right;}
+    .navItems > p {width: 100%; margin: auto; text-align: left; font-size: 80%;text-align: right}
 
     .social-icon {width: 25px}
+    .personal-icon {width: 25px; display: inline;}
 
     body > section {width: 65%; float: right;}
 
     .summary {margin-top: 250px;}
+
+    .personal-icon-mobile {height: 24px; display: inline; margin-left: 15px;}
+    .personal-icon {display: none;}
 
     .mobile-divider {display: none;}
 
@@ -111,17 +117,16 @@ body {width: 100%; overflow-x: hidden;}
     
     .gallery-mobile {display: none;}
 
-    .gallery {display: block; width: 105%; margin-left: -2%; position: absolute; top:0; z-index: -2; margin-top: -2%;}
+    .gallery {display: block; width: 106%; margin-left: -5%; position: absolute; top:0; z-index: -2; margin-top: -7%;}
 
     .gallery-img {width: 100%;}
 
-    footer {position: absolute; bottom: 0;}
+    footer {position: absolute; bottom: 0}
 }
 
 @media screen and (min-width: 768px) {
     
-    
-   body {background-color: red;}
+.navItems .button-link {width: 150px;}
 
 
 
