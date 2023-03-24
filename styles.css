@@ -19,6 +19,9 @@ body {background-color: #D9C4DA; min-width: 360px; ; width: 100%;overflow-x: hid
     src: url(BaskervilleMTPro-Regular.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -42,11 +45,6 @@ nav h1 {font-size: 200%; margin-bottom: 40px; text-decoration: underline;}
 .personal-icon {height: 24px; display: inline; margin-right: 15px;}
 
 .mobile-divider {border-bottom: 1px solid #010203; margin: 35px 0px;}
-
-.button-link {text-align: center; background-color: #ffffff; height: 45px; color: #010203; border-radius: 25px; box-sizing: border-box; outline: solid 3px #D9C4DA; outline-offset: -6px; padding: 10px; width: 200px;font-size: 120%; margin: auto; margin-top: 30px; color: #010203; text-decoration: none;}
-
-.button-link:visited {color: #010203; text-decoration: none;}
-
 
 .links-header {margin-top: 20px;}
 
@@ -83,50 +81,56 @@ nav h1 {font-size: 200%; margin-bottom: 40px; text-decoration: underline;}
 
 .personal-icon-mobile {display: none;}
 
+.button-link {text-align: center;  height: 45px; border-radius: 25px; box-sizing: border-box; width: 200px; font-size: 120%; margin: auto; margin-top: 30px; font-family: 'Montserrat', sans-serif;}
+
+#resume {outline: solid 3px #D9C4DA; outline-offset: -6px; color: #010203; background-color: #ffffff;}
+
+.button-link a {color: #010203; text-decoration: none; position: relative; top: 13; line-height: normal;}
+
+.button-link:visited {color: #010203; text-decoration: none;}
+
+#body-button {background-color: #CC74D6; position: relative; top: 13;line-height: normal;}
+
+
 @media screen and (min-width: 480px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-    }
+body {width: 75%; overflow-x: hidden; padding: 0px 20px; margin: auto; height: auto}
 
-body {width: 100%; overflow-x: hidden;padding: 0px 20px}
+    nav {width: 18%; float: left; height: auto; padding: 30px 0px ; position: fixed; border-radius: 25px; background-color: rgba(255, 255, 255, 0.5); margin-left: 30px; box-sizing: border-box;}
 
-    nav {width: 18%; float: left; height: 90%; padding: 10% 0px; position: fixed; border-radius: 25px; background-color: rgba(255, 255, 255, 0.5);}
-
-    .navItems > p {width: 100%; margin: auto; text-align: left; font-size: 80%;text-align: right}
+    .navItems > p {width: 100%; margin: auto; text-align: left; font-size: 80%; text-align: right}
 
     .social-icon {width: 25px}
     .personal-icon {width: 25px; display: inline;}
 
     body > section {width: 65%; float: right;}
 
-    .summary {margin-top: 250px;}
+    .summary {margin-top: 150px; line-height: 1.8; border-radius: 30px; padding: 30px; box-sizing: border-box;background-color: rgba(255, 255, 255, 0.5);}
 
     .personal-icon-mobile {height: 24px; display: inline; margin-left: 15px;}
     .personal-icon {display: none;}
 
     .mobile-divider {display: none;}
 
-    .work-history {width: 100%;}
+    .work-history {}
+    .work-history-page {}
     
     .ul-container {width: 65%; float: right;}
 
     
     .gallery-mobile {display: none;}
 
-    .gallery {display: block; width: 106%; margin-left: -5%; position: absolute; top:0; z-index: -2; margin-top: -7%;}
+    .gallery {display: block; width: 106%; margin-left: -5%; position: absolute; top:0; z-index: -2;left:0}
 
     .gallery-img {width: 100%;}
+    
 
     footer {position: absolute; bottom: 0}
 }
 
 @media screen and (min-width: 768px) {
     
-.navItems .button-link {width: 150px;}
+
 
 
 
